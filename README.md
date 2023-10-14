@@ -5,6 +5,35 @@ Swagger polymorphism is a feature in the Swagger framework that allows for the d
 With Swagger polymorphism, you can define a base model and then define multiple sub-models that inherit from the base model. Each sub-model can have its own unique properties and characteristics. This enables you to handle different variations or versions of an object within a single API specification.
 
 
+### Concept Diagram
+
+```mermaid
+classDiagram
+class DeviceRequest {
+    string serialNumber
+    string Brand
+    int screenSize
+    GetDeviceType()
+}
+
+class PhoneRequest {
+    string SimNumber
+    bool isSmartPhone
+    GetDeviceType()
+}
+
+class LaptopDevice {
+    string GraphicsCard
+    string MotherBoard
+    int NumberofUsbPorts
+    GetDeviceType()
+}
+
+DeviceRequest <|-- PhoneRequest
+DeviceRequest <|-- LaptopDevice
+<<AbstractClass>> DeviceRequest
+```
+
 ### Schema example
 ```json
 {
