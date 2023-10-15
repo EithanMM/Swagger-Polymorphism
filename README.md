@@ -33,6 +33,7 @@ DeviceRequest <|-- PhoneRequest
 DeviceRequest <|-- LaptopDevice
 <<AbstractClass>> DeviceRequest
 ```
+In this diagram example, ***DeviceRequest*** is the base model, **PhoneRequest** and **LaptopDevice** are sub-models that inherit from the base model. Each sub-model has its own additional properties based on the specific type of object it represents.
 
 ### Schema example
 ```json
