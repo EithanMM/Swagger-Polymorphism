@@ -57,7 +57,7 @@ To implement Swagger polymorphism in C#, you can use libraries or frameworks tha
 ```json
 {
   "DeviceType": "Smarthphone",
-	"serialNumber": "SLDKOI98",
+  "serialNumber": "SLDKOI98",
   "brand": "Samsung",
   "screenSize": 5,
   "simNumber": "3094959",
