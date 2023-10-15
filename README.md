@@ -35,6 +35,12 @@ DeviceRequest <|-- LaptopDevice
 ```
 In this diagram example, ***DeviceRequest*** is the base model, **PhoneRequest** and **LaptopDevice** are sub-models that inherit from the base model. Each sub-model has its own additional properties based on the specific type of object it represents.
 
+Swagger polymorphism in C# refers to the implementation of polymorphic data models in the context of a C# application using the Swagger framework.
+
+In C#, polymorphism can be achieved through inheritance and interfaces. With Swagger, you can define a base model, which serves as the common properties and behavior shared by all the sub-models. Each sub-model can then inherit from the base model and add its own unique properties and characteristics.
+
+To implement Swagger polymorphism in C#, you can use libraries or frameworks that support Swagger, such as Swashbuckle. These libraries provide annotations and attributes that allow you to define the relationships between the base model and its sub-models, specify the type of an object, and provide additional information for proper serialization and deserialization.
+
 ### Schema example
 ```json
 {
